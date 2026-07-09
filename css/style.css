@@ -523,3 +523,125 @@ function calculateSum() {
     document.getElementById("sumResult").innerHTML = n1 + n2;
 
 }
+/* ===================================
+   LESSON TEMPLATE
+=================================== */
+
+.hero{
+background:linear-gradient(135deg,#198754,#20c997);
+color:#fff;
+padding:70px 0;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:3rem;
+font-weight:700;
+}
+
+.hero p{
+font-size:1.2rem;
+opacity:.95;
+}
+
+.sidebar{
+background:#fff;
+border-radius:12px;
+padding:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+position:sticky;
+top:90px;
+}
+
+.sidebar h4{
+margin-bottom:20px;
+font-weight:700;
+color:#198754;
+}
+
+.sidebar ul{
+list-style:none;
+padding-left:0;
+margin-bottom:20px;
+}
+
+.sidebar li{
+margin-bottom:8px;
+}
+
+.sidebar a{
+display:block;
+padding:8px 12px;
+border-radius:8px;
+text-decoration:none;
+color:#333;
+transition:.3s;
+}
+
+.sidebar a:hover{
+background:#198754;
+color:#fff;
+padding-left:18px;
+}
+
+.sidebar a.active{
+background:#198754;
+color:#fff;
+font-weight:600;
+}
+
+.card{
+border:none;
+border-radius:12px;
+}
+
+.table th{
+background:#198754;
+color:#fff;
+}
+
+code{
+font-size:16px;
+font-weight:600;
+color:#198754;
+}
+
+.alert{
+border-radius:12px;
+}
+
+.list-group-item{
+border:none;
+border-bottom:1px solid #eee;
+}
+
+.list-group-item:hover{
+background:#198754;
+color:#fff;
+}
+
+.btn{
+border-radius:8px;
+}
+
+footer{
+margin-top:70px;
+}
+
+footer a{
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+height:4px;
+background:#ffc107;
+width:0%;
+z-index:9999;
+}
