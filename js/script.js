@@ -1,3 +1,1 @@
-// Excel & HR Learning Hub
-
-console.log("Website Loaded Successfully!");
+console.log("Excel & HR Learning Hub Loaded");
