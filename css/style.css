@@ -645,3 +645,48 @@ background:#ffc107;
 width:0%;
 z-index:9999;
 }
+/* ==============================
+   Back To Top Button
+============================== */
+
+#topBtn{
+
+display:none;
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#198754;
+
+color:#fff;
+
+font-size:22px;
+
+cursor:pointer;
+
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+z-index:9999;
+
+transition:.3s;
+
+}
+
+#topBtn:hover{
+
+transform:translateY(-5px);
+
+background:#146c43;
+
+}
