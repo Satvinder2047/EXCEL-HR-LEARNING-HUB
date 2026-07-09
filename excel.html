@@ -6,7 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Excel & HR Learning Hub</title>
+<title>Excel Functions | Excel & HR Learning Hub</title>
+
+<link rel="icon" href="images/excel-icon.png">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -18,15 +20,18 @@
 
 <body>
 
-<!-- Navigation -->
+<!-- Navbar -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
 
 <div class="container">
 
-<a class="navbar-brand fw-bold" href="#">
-<i class="bi bi-file-earmark-excel-fill"></i>
+<a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+
+<img src="images/logo.png" width="45" class="me-2">
+
 Excel & HR Learning Hub
+
 </a>
 
 <button class="navbar-toggler"
@@ -43,27 +48,15 @@ data-bs-target="#menu">
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item">
-<a class="nav-link active" href="#">Home</a>
+
+<a class="nav-link" href="index.html">Home</a>
+
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="excel.html">Excel</a>
-</li>
 
-<li class="nav-item">
-<a class="nav-link" href="#">Templates</a>
-</li>
+<a class="nav-link active" href="excel.html">Excel</a>
 
-<li class="nav-item">
-<a class="nav-link" href="#">Tutorials</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#">About</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#">Contact</a>
 </li>
 
 </ul>
@@ -78,144 +71,96 @@ data-bs-target="#menu">
 
 <section class="hero">
 
-<div class="container">
+<div class="container text-center">
 
-<h1>Learn Excel Like a Professional</h1>
+<h1>Microsoft Excel Learning Center</h1>
 
 <p>
 
-Master Microsoft Excel, HR Operations,
-Dashboards, Automation and Templates
-through practical tutorials.
+Master Excel from Beginner to Advanced with practical examples.
 
 </p>
 
-<a href="excel.html" class="btn btn-warning btn-lg mt-3">
+<div class="search-box mt-4 mx-auto">
 
-Start Learning
+<input
+id="searchBox"
+type="text"
+placeholder="Search Function...">
 
-</a>
+<button onclick="searchSite()">
+
+<i class="bi bi-search"></i>
+
+</button>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- Categories -->
+<!-- Beginner -->
 
-<section class="container my-5">
+<section class="container py-5">
 
-<h2 class="text-center mb-5">
+<h2 class="mb-4">
 
-Explore Categories
+🟢 Beginner Functions
 
 </h2>
 
 <div class="row g-4">
 
-<div class="col-md-4">
+<div class="col-md-3">
 
-<div class="feature">
+<div class="formula-card">
 
-<i class="bi bi-calculator-fill"></i>
+<h4>IF</h4>
 
-<h4>Excel Functions</h4>
+<p>Logical Tests</p>
 
-<p>
+<a href="excel/if.html" class="btn btn-success btn-sm">
 
-200+ Excel formulas with examples.
+Learn
 
-</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="feature">
-
-<i class="bi bi-people-fill"></i>
-
-<h4>HR Resources</h4>
-
-<p>
-
-Recruitment, Payroll,
-Attendance and SOPs.
-
-</p>
+</a>
 
 </div>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-3">
 
-<div class="feature">
+<div class="formula-card">
 
-<i class="bi bi-bar-chart-fill"></i>
+<h4>SUM</h4>
 
-<h4>Dashboards</h4>
-
-<p>
-
-Interactive Excel dashboards.
-
-</p>
+<p>Add Numbers</p>
 
 </div>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-3">
 
-<div class="feature">
+<div class="formula-card">
 
-<i class="bi bi-lightning-fill"></i>
+<h4>AVERAGE</h4>
 
-<h4>Automation</h4>
-
-<p>
-
-Power Query and VBA.
-
-</p>
+<p>Average Values</p>
 
 </div>
 
 </div>
 
-<div class="col-md-4">
+<div class="col-md-3">
 
-<div class="feature">
+<div class="formula-card">
 
-<i class="bi bi-folder-fill"></i>
+<h4>COUNTIF</h4>
 
-<h4>Templates</h4>
-
-<p>
-
-Free Excel Templates.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="feature">
-
-<i class="bi bi-play-circle-fill"></i>
-
-<h4>Tutorials</h4>
-
-<p>
-
-Step-by-step learning.
-
-</p>
+<p>Count by Condition</p>
 
 </div>
 
@@ -225,13 +170,209 @@ Step-by-step learning.
 
 </section>
 
-<footer>
+<!-- Intermediate -->
+
+<section class="container py-5">
+
+<h2 class="mb-4">
+
+🔵 Intermediate Functions
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="formula-card">
+
+<h4>VLOOKUP</h4>
+
+<p>Vertical Lookup</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="formula-card">
+
+<h4>XLOOKUP</h4>
+
+<p>Modern Lookup</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="formula-card">
+
+<h4>FILTER</h4>
+
+<p>Dynamic Filter</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="formula-card">
+
+<h4>SUMIFS</h4>
+
+<p>Conditional Sum</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Advanced -->
+
+<section class="container py-5">
+
+<h2 class="mb-4">
+
+🟣 Advanced Functions
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="formula-card">
+
+<h4>INDEX + MATCH</h4>
+
+<p>Advanced Lookup</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="formula-card">
+
+<h4>LET</h4>
+
+<p>Variable Formula</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="formula-card">
+
+<h4>LAMBDA</h4>
+
+<p>Create Functions</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="formula-card">
+
+<h4>Power Query</h4>
+
+<p>Data Transformation</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Learning Roadmap -->
+
+<section class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-5">
+
+📚 Excel Learning Roadmap
+
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<h1>1️⃣</h1>
+
+<h4>Basics</h4>
+
+<p>Functions & Formatting</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1>2️⃣</h1>
+
+<h4>Lookup</h4>
+
+<p>VLOOKUP & XLOOKUP</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1>3️⃣</h1>
+
+<h4>Analysis</h4>
+
+<p>Pivot & Dashboards</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h1>4️⃣</h1>
+
+<h4>Automation</h4>
+
+<p>Power Query & VBA</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white py-4">
+
+<div class="container text-center">
 
 <p>
 
-© 2026 Excel & HR Learning Hub
+© <span id="year"></span>
+
+Excel & HR Learning Hub
 
 </p>
+
+</div>
 
 </footer>
 
