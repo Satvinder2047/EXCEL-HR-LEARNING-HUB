@@ -83,3 +83,78 @@ color:white;
 margin-top:80px;
 
 }
+.search-box{
+
+background:white;
+
+padding:8px;
+
+border-radius:50px;
+
+display:flex;
+
+max-width:500px;
+
+margin:auto;
+
+}
+
+.search-box input{
+
+border:none;
+
+outline:none;
+
+width:100%;
+
+padding:12px;
+
+border-radius:50px;
+
+}
+
+.search-box button{
+
+border:none;
+
+background:#198754;
+
+color:white;
+
+padding:12px 20px;
+
+border-radius:50px;
+
+}
+
+.stats{
+
+display:flex;
+
+justify-content:center;
+
+gap:60px;
+
+}
+
+.stats h3{
+
+font-size:40px;
+
+font-weight:bold;
+
+}
+
+.stats p{
+
+margin-top:-10px;
+
+}
+
+.hero img{
+
+border-radius:20px;
+
+margin-top:30px;
+
+}
