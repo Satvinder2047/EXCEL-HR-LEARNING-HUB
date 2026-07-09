@@ -153,3 +153,32 @@ progress.style.width = scrolled + "%";
 }
 
 });
+// ===========================
+// IF Function Simulator
+// ===========================
+
+function checkResult() {
+
+    let marks = document.getElementById("marks");
+
+    if (!marks) return;
+
+    let value = Number(marks.value);
+
+    let result = document.getElementById("resultText");
+
+    if (value >= 35) {
+
+        result.innerHTML = "✅ Pass";
+
+        result.className = "text-success";
+
+    } else {
+
+        result.innerHTML = "❌ Fail";
+
+        result.className = "text-danger";
+
+    }
+
+}
