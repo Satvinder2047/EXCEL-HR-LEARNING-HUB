@@ -4,266 +4,17 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>AVERAGE Function | Excel HR Learning Hub</title>
+<title>AVERAGE Function | Excel & HR Learning Hub</title>
 
-<style>
+<link rel="icon" href="../images/excel-icon.png">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI, Arial, sans-serif;
-}
+<link rel="stylesheet" href="../css/style.css">
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-body{
-    background:#f4f7fb;
-    color:#333;
-}
-
-
-/* Navbar */
-
-.navbar{
-    background:#1f4e79;
-    color:white;
-    padding:15px 30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-
-.navbar h2{
-    font-size:22px;
-}
-
-
-.navbar a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-}
-
-
-/* Layout */
-
-.wrapper{
-    display:flex;
-}
-
-
-/* Sidebar */
-
-.sidebar{
-
-    width:260px;
-    background:white;
-    min-height:100vh;
-    padding:20px;
-    border-right:1px solid #ddd;
-
-}
-
-
-.sidebar h3{
-
-    color:#1f4e79;
-    margin-bottom:15px;
-
-}
-
-
-.menu{
-
-    margin-bottom:10px;
-
-}
-
-
-.menu-title{
-
-    background:#1f4e79;
-    color:white;
-    padding:10px;
-    cursor:pointer;
-    border-radius:5px;
-
-}
-
-
-.submenu{
-
-    display:none;
-    padding-left:15px;
-    margin-top:5px;
-
-}
-
-
-.submenu a{
-
-    display:block;
-    padding:8px;
-    text-decoration:none;
-    color:#333;
-
-}
-
-
-.submenu a:hover{
-
-    background:#eaf2f8;
-
-}
-
-
-/* Main Content */
-
-
-.content{
-
-    flex:1;
-    padding:30px;
-
-}
-
-
-
-/* Hero */
-
-
-.hero{
-
-    background:linear-gradient(135deg,#1f4e79,#2f75b5);
-    color:white;
-    padding:35px;
-    border-radius:12px;
-    margin-bottom:25px;
-
-}
-
-
-.hero h1{
-
-    font-size:36px;
-    margin-bottom:10px;
-
-}
-
-
-/* Cards */
-
-
-.card{
-
-    background:white;
-    padding:25px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
-
-}
-
-
-.card h2{
-
-    color:#1f4e79;
-    margin-bottom:15px;
-
-}
-
-
-code{
-
-    display:block;
-    background:#222;
-    color:#fff;
-    padding:15px;
-    border-radius:6px;
-    margin:15px 0;
-
-}
-
-
-/* Tables */
-
-
-table{
-
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
-
-}
-
-
-th{
-
-    background:#1f4e79;
-    color:white;
-
-}
-
-
-td,th{
-
-    padding:12px;
-    border:1px solid #ddd;
-    text-align:center;
-
-}
-
-
-/* Calculator */
-
-
-input{
-
-    padding:10px;
-    width:150px;
-    margin:5px;
-
-}
-
-
-button{
-
-    background:#1f4e79;
-    color:white;
-    padding:10px 20px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-
-}
-
-
-button:hover{
-
-    background:#2f75b5;
-
-}
-
-
-/* Footer */
-
-
-footer{
-
-    background:#1f4e79;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:30px;
-
-}
-
-
-</style>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
 </head>
 
@@ -271,605 +22,918 @@ footer{
 <body>
 
 
+<div id="progressBar"></div>
+
+
+
 <!-- Navbar -->
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
 
-<div class="navbar">
+<div class="container">
 
-<h2>Excel HR Learning Hub</h2>
+<a class="navbar-brand fw-bold" href="../index.html">
 
-<div>
+📊 Excel & HR Learning Hub
 
-<a href="index.html">Home</a>
-<a href="functions.html">Functions</a>
-<a href="about.html">About</a>
-
-</div>
+</a>
 
 </div>
 
+</nav>
 
 
-<div class="wrapper">
+
+
+<!-- Breadcrumb -->
+
+<nav class="container mt-4" aria-label="breadcrumb">
+
+<ol class="breadcrumb">
+
+
+<li class="breadcrumb-item">
+
+<a href="../index.html">Home</a>
+
+</li>
+
+
+<li class="breadcrumb-item">
+
+<a href="../excel.html">Excel</a>
+
+</li>
+
+
+<li class="breadcrumb-item">
+
+Beginner
+
+</li>
+
+
+<li class="breadcrumb-item active">
+
+AVERAGE Function
+
+</li>
+
+
+</ol>
+
+</nav>
+
+
+
+
+
+<!-- Hero -->
+
+
+<section class="hero">
+
+
+<div class="container text-center">
+
+
+<h1>AVERAGE Function in Excel</h1>
+
+
+<p>
+
+Calculate average values easily with Excel formulas and HR practical examples.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- Content -->
+
+
+<div class="container py-5">
+
+
+<div class="row">
+
+
+
 
 
 <!-- Sidebar -->
 
 
+<div class="col-lg-3">
+
+
 <div class="sidebar">
 
 
-<h3>Excel Functions</h3>
+<h4>Excel Functions</h4>
 
 
-<div class="menu">
 
-<div class="menu-title" onclick="toggleMenu('basic')">
-Basic Functions +
+
+<b>🟢 Beginner</b>
+
+
+<ul>
+
+
+<li><a href="if.html">IF</a></li>
+
+
+<li><a href="sum.html">SUM</a></li>
+
+
+<li><a href="average.html">AVERAGE</a></li>
+
+
+<li><a href="countif.html">COUNTIF</a></li>
+
+
+<li><a href="countifs.html">COUNTIFS</a></li>
+
+
+</ul>
+
+
+
+
+<b>🔵 Intermediate</b>
+
+
+<ul>
+
+
+<li><a href="vlookup.html">VLOOKUP</a></li>
+
+
+<li><a href="xlookup.html">XLOOKUP</a></li>
+
+
+<li><a href="filter.html">FILTER</a></li>
+
+
+<li><a href="sumifs.html">SUMIFS</a></li>
+
+
+</ul>
+
+
+
+
+<b>🟣 Advanced</b>
+
+
+<ul>
+
+
+<li><a href="index-match.html">INDEX + MATCH</a></li>
+
+
+<li><a href="let.html">LET</a></li>
+
+
+<li><a href="lambda.html">LAMBDA</a></li>
+
+
+<li><a href="power-query.html">Power Query</a></li>
+
+
+</ul>
+
+
+
 </div>
 
 
-<div class="submenu" id="basic">
-
-<a href="average.html">AVERAGE</a>
-<a href="sum.html">SUM</a>
-<a href="count.html">COUNT</a>
-<a href="max.html">MAX</a>
-<a href="min.html">MIN</a>
-
-</div>
-
 </div>
 
 
 
-<div class="menu">
 
-<div class="menu-title" onclick="toggleMenu('logical')">
-Logical Functions +
-</div>
-
-
-<div class="submenu" id="logical">
-
-<a href="if.html">IF</a>
-<a href="and.html">AND</a>
-<a href="or.html">OR</a>
-
-</div>
-
-
-</div>
-
-
-
-<div class="menu">
-
-<div class="menu-title" onclick="toggleMenu('lookup')">
-Lookup Functions +
-</div>
-
-
-<div class="submenu" id="lookup">
-
-<a href="vlookup.html">VLOOKUP</a>
-<a href="xlookup.html">XLOOKUP</a>
-
-</div>
-
-
-</div>
-
-
-
-</div>
 
 
 <!-- Main Content -->
 
-<div class="content">
+
+<div class="col-lg-9">
 
 
-<div class="hero">
 
-<h1>AVERAGE Function</h1>
+<h2>Syntax</h2>
 
-<p>
-Calculate average values quickly using Excel AVERAGE functions with HR examples.
-</p>
+
+<div class="alert alert-light border">
+
+
+<code>
+
+=AVERAGE(number1, [number2], ...)
+
+</code>
+
 
 </div>
 
 
-<div class="card">
 
-<h2>Function Overview</h2>
+
+
+<h2>Description</h2>
 
 
 <p>
 
 The AVERAGE function calculates the arithmetic mean of numbers.
-It is widely used in HR reports for salary analysis,
-attendance calculation, overtime analysis and employee performance reports.
+
+It is used to find the average value from a range of cells.
+
+In HR reports, it is commonly used for calculating:
 
 </p>
-
-
-</div>
-
-
-
-<div class="card">
-
-<h2>Syntax</h2>
-
-
-<code>
-=AVERAGE(number1, [number2], ...)
-</code>
-
-
-<p>
-
-<strong>Example:</strong>
-
-</p>
-
-
-<code>
-=AVERAGE(C2:C10)
-</code>
-
-
-</div>
-  <div class="card">
-
-<h2>Arguments Explanation</h2>
-
-
-<table>
-
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-
-
-<tr>
-<td>number1</td>
-<td>First number or cell range for calculating average</td>
-</tr>
-
-
-<tr>
-<td>number2</td>
-<td>Additional numbers or ranges (optional)</td>
-</tr>
-
-
-<tr>
-<td>Range</td>
-<td>A group of cells containing numeric values</td>
-</tr>
-
-
-</table>
-
-</div>
-
-
-
-
-<div class="card">
-
-
-<h2>Basic Example</h2>
-
-
-<p>
-Employee salary data is available in column C.
-We need to calculate the average salary.
-</p>
-
-
-<table>
-
-<tr>
-<th>Employee</th>
-<th>Department</th>
-<th>Salary</th>
-</tr>
-
-
-<tr>
-<td>Rahul</td>
-<td>Production</td>
-<td>25000</td>
-</tr>
-
-
-<tr>
-<td>Amit</td>
-<td>Quality</td>
-<td>30000</td>
-</tr>
-
-
-<tr>
-<td>Neha</td>
-<td>HR</td>
-<td>28000</td>
-</tr>
-
-
-</table>
-
-
-
-<code>
-=AVERAGE(C2:C4)
-</code>
-
-
-<p>
-Result: Average salary of all employees.
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h2>HR Practical Example 1: Average Salary</h2>
-
-
-<p>
-HR team can use the AVERAGE function to analyze
-average employee salary department-wise.
-</p>
-
-
-
-<table>
-
-<tr>
-<th>Employee</th>
-<th>Department</th>
-<th>Salary</th>
-</tr>
-
-
-<tr>
-<td>101</td>
-<td>Production</td>
-<td>25000</td>
-</tr>
-
-
-<tr>
-<td>102</td>
-<td>Production</td>
-<td>30000</td>
-</tr>
-
-
-<tr>
-<td>103</td>
-<td>Quality</td>
-<td>35000</td>
-</tr>
-
-
-</table>
-
-
-
-<p>
-Average Production Salary:
-</p>
-
-
-<code>
-=AVERAGEIF(B2:B4,"Production",C2:C4)
-</code>
-
-
-<p>
-This formula calculates only Production department average salary.
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h2>HR Practical Example 2: Attendance Average</h2>
-
-
-<p>
-Calculate average attendance percentage of employees.
-</p>
-
-
-<table>
-
-<tr>
-<th>Employee</th>
-<th>Attendance %</th>
-</tr>
-
-
-<tr>
-<td>Rahul</td>
-<td>96</td>
-</tr>
-
-
-<tr>
-<td>Amit</td>
-<td>92</td>
-</tr>
-
-
-<tr>
-<td>Neha</td>
-<td>98</td>
-</tr>
-
-
-</table>
-
-
-
-<code>
-=AVERAGE(B2:B4)
-</code>
-
-
-<p>
-Result gives average attendance percentage.
-</p>
-
-
-</div>
-
-
-
-
-<div class="card">
-
-
-<h2>AVERAGEIF Function</h2>
-
-
-<p>
-AVERAGEIF calculates average based on one condition.
-</p>
-
-
-<code>
-=AVERAGEIF(range,criteria,average_range)
-</code>
-
-
-
-<p>
-Example: Average salary of Production employees.
-</p>
-
-
-<code>
-=AVERAGEIF(B:B,"Production",C:C)
-</code>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h2>AVERAGEIFS Function</h2>
-
-
-<p>
-AVERAGEIFS calculates average using multiple conditions.
-</p>
-
-
-<code>
-=AVERAGEIFS(C:C,B:B,"Production",D:D,"Active")
-</code>
-
-
-<p>
-Example:
-Average salary of Active Production employees.
-</p>
-
-
-</div>
-  <div class="card">
-
-<h2>Interactive Average Calculator</h2>
-
-<p>
-Enter numbers separated by commas to calculate average instantly.
-</p>
-
-
-<input type="text" id="numbers" placeholder="Example: 10,20,30">
-
-
-<button onclick="calculateAverage()">
-Calculate Average
-</button>
-
-
-<h3 id="result" style="margin-top:15px;"></h3>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h2>Related Functions</h2>
-
-
-<table>
-
-
-<tr>
-<th>Function</th>
-<th>Purpose</th>
-</tr>
-
-
-<tr>
-<td>SUM</td>
-<td>Add numbers and calculate totals</td>
-</tr>
-
-
-<tr>
-<td>COUNT</td>
-<td>Count numeric values</td>
-</tr>
-
-
-<tr>
-<td>AVERAGEIF</td>
-<td>Average based on one condition</td>
-</tr>
-
-
-<tr>
-<td>AVERAGEIFS</td>
-<td>Average based on multiple conditions</td>
-</tr>
-
-
-<tr>
-<td>MEDIAN</td>
-<td>Find middle value</td>
-</tr>
-
-
-</table>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h2>HR Applications</h2>
 
 
 <ul>
 
-<li>Average Employee Salary Analysis</li>
-
-<li>Average Department Cost</li>
+<li>Average Employee Salary</li>
 
 <li>Average Attendance Percentage</li>
 
 <li>Average Overtime Hours</li>
 
-<li>Average Recruitment TAT</li>
+<li>Average Experience</li>
 
 <li>Average Training Hours</li>
 
 </ul>
 
 
+
+
+
+<h2>Arguments</h2>
+
+
+<table class="table table-bordered">
+
+
+<tr>
+
+<th>Argument</th>
+
+<th>Description</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>number1</td>
+
+<td>First number or cell range to calculate average.</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>number2</td>
+
+<td>Additional numbers or ranges (optional).</td>
+
+</tr>
+
+
+</table>
+
+
+
+
+
+<h2>Example 1</h2>
+
+
+<div class="alert alert-success">
+
+
+<code>
+
+=AVERAGE(C2:C10)
+
+</code>
+
+
+</div>
+
+
+<p>
+
+Calculates the average value from cells C2 to C10.
+
+</p>
+<!-- Example 2 -->
+
+<h2>Example 2</h2>
+
+<div class="alert alert-success">
+
+<code>
+
+=AVERAGE(B2:B31)
+
+</code>
+
+</div>
+
+
+<p>
+
+Calculate the average attendance percentage of employees.
+
+</p>
+
+
+
+
+
+<!-- HR Example -->
+
+<h2 class="mt-5">HR Practical Example</h2>
+
+
+<p>
+
+HR can use the AVERAGE function to analyse employee salary data.
+
+</p>
+
+
+
+<table class="table table-bordered">
+
+
+<tr>
+
+<th>Employee</th>
+
+<th>Department</th>
+
+<th>Salary</th>
+
+</tr>
+
+
+<tr>
+
+<td>Rahul</td>
+
+<td>Production</td>
+
+<td>25000</td>
+
+</tr>
+
+
+<tr>
+
+<td>Amit</td>
+
+<td>Quality</td>
+
+<td>30000</td>
+
+</tr>
+
+
+<tr>
+
+<td>Neha</td>
+
+<td>HR</td>
+
+<td>28000</td>
+
+</tr>
+
+
+</table>
+
+
+
+<div class="alert alert-success">
+
+
+<code>
+
+=AVERAGE(C2:C4)
+
+</code>
+
+
+</div>
+
+
+
+<p>
+
+Result: Average salary of all employees.
+
+</p>
+
+
+
+
+
+
+
+<h2>AVERAGEIF Function</h2>
+
+
+<p>
+
+AVERAGEIF calculates average values based on one condition.
+
+</p>
+
+
+
+<div class="alert alert-warning">
+
+
+<code>
+
+=AVERAGEIF(range,criteria,average_range)
+
+</code>
+
+
+</div>
+
+
+
+
+<h4>Example</h4>
+
+
+<p>
+
+Find average salary of Production department employees.
+
+</p>
+
+
+
+<div class="alert alert-success">
+
+
+<code>
+
+=AVERAGEIF(B:B,"Production",C:C)
+
+</code>
+
+
 </div>
 
 
 
 
 
-<div class="card">
 
 
-<h2>Practice Questions</h2>
+<h2>AVERAGEIFS Function</h2>
 
 
-<ol>
+<p>
 
-<li>
-Calculate average salary from employee master data.
-</li>
+AVERAGEIFS calculates average values using multiple conditions.
 
-
-<li>
-Find average attendance of Production employees.
-</li>
+</p>
 
 
-<li>
-Calculate average overtime hours.
-</li>
+
+<div class="alert alert-warning">
 
 
-<li>
-Find average experience of employees.
-</li>
+<code>
 
+=AVERAGEIFS(C:C,B:B,"Production",D:D,"Active")
 
-</ol>
+</code>
 
 
 </div>
 
 
 
+<p>
+
+Example: Calculate average salary of active Production employees.
+
+</p>
 
 
-<div style="display:flex;justify-content:space-between;margin-top:20px;">
 
 
-<a href="sum.html">
 
-<button>
-← Previous: SUM
+
+
+<h2>Common HR Uses</h2>
+
+
+<ul>
+
+
+<li>Average Salary Analysis</li>
+
+
+<li>Average Department Cost</li>
+
+
+<li>Average Attendance Report</li>
+
+
+<li>Average Overtime Hours</li>
+
+
+<li>Average Employee Experience</li>
+
+
+<li>Average Recruitment TAT</li>
+
+
+</ul>
+
+
+
+
+
+
+
+<!-- Try It Yourself -->
+
+
+<h2 class="mt-5">
+
+🧪 Try It Yourself
+
+</h2>
+
+
+
+<div class="card shadow p-4">
+
+
+<label class="form-label">
+
+Enter Numbers
+
+</label>
+
+
+<input
+
+type="text"
+
+id="averageNumbers"
+
+class="form-control"
+
+placeholder="Example: 10,20,30,40"
+
+
+>
+
+
+
+<button
+
+class="btn btn-success mt-3"
+
+onclick="calculateAverage()">
+
+
+Calculate Average
+
+
 </button>
+
+
+
+<h4 class="mt-4">
+
+Average:
+
+<span id="averageResult" class="text-success"></span>
+
+
+</h4>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Download Practice File -->
+
+
+<h2 class="mt-5">
+
+Download Practice File
+
+</h2>
+
+
+
+<a href="#" class="btn btn-success">
+
+
+Download Excel File
+
+
+</a>
+<!-- Related Functions -->
+
+<h2 class="mt-5 mb-4">
+
+Related Functions
+
+</h2>
+
+
+
+<div class="row g-4">
+
+
+
+<div class="col-md-3">
+
+
+<div class="formula-card">
+
+
+<h4>AVERAGEIF</h4>
+
+
+<p>
+
+Average with One Condition
+
+</p>
+
+
+<a href="averageif.html" class="btn btn-success btn-sm">
+
+Learn
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-3">
+
+
+<div class="formula-card">
+
+
+<h4>AVERAGEIFS</h4>
+
+
+<p>
+
+Multiple Conditions
+
+</p>
+
+
+<a href="averageifs.html" class="btn btn-success btn-sm">
+
+Learn
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-3">
+
+
+<div class="formula-card">
+
+
+<h4>SUM</h4>
+
+
+<p>
+
+Add Values
+
+</p>
+
+
+<a href="sum.html" class="btn btn-success btn-sm">
+
+Learn
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-3">
+
+
+<div class="formula-card">
+
+
+<h4>MEDIAN</h4>
+
+
+<p>
+
+Middle Value
+
+</p>
+
+
+<a href="median.html" class="btn btn-success btn-sm">
+
+Learn
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<hr class="my-5">
+
+
+
+
+
+
+<div class="d-flex justify-content-between">
+
+
+<a href="sum.html" class="btn btn-outline-secondary">
+
+
+← Previous Lesson
+
 
 </a>
 
 
 
-<a href="count.html">
 
-<button>
-Next: COUNT →
-</button>
+<a href="countif.html" class="btn btn-success">
+
+
+Next Lesson →
+
 
 </a>
 
 
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- Quick Facts -->
+
+<div class="col-lg-3">
+
+
+<div class="card shadow">
+
+
+<div class="card-body">
+
+
+<h4>Quick Facts</h4>
+
+
+<hr>
+
+
+
+<p>
+
+<b>Category</b><br>
+
+Statistical Function
+
+</p>
+
+
+
+<p>
+
+<b>Difficulty</b><br>
+
+⭐⭐ Beginner
+
+</p>
+
+
+
+<p>
+
+<b>Available Since</b><br>
+
+Excel 2007+
+
+</p>
+
+
+
+<p>
+
+<b>Related Functions</b>
+
+</p>
+
+
+<ul>
+
+<li>AVERAGEIF</li>
+
+<li>AVERAGEIFS</li>
+
+<li>SUM</li>
+
+<li>MEDIAN</li>
+
+</ul>
+
+
+
+</div>
+
+
+</div>
+
+
 </div>
 
 
@@ -877,15 +941,27 @@ Next: COUNT →
 
 </div>
 
+
 </div>
 
 
 
 
 
-<footer>
 
-Excel HR Learning Hub | Learn Excel with HR Practical Examples
+<footer class="bg-dark text-white py-4">
+
+
+<div class="container text-center">
+
+
+© <span id="year"></span>
+
+Excel & HR Learning Hub
+
+
+</div>
+
 
 </footer>
 
@@ -893,56 +969,44 @@ Excel HR Learning Hub | Learn Excel with HR Practical Examples
 
 
 
+
+<script src="../js/script.js"></script>
+
+
+
 <script>
-
-
-function toggleMenu(id){
-
-let menu=document.getElementById(id);
-
-
-if(menu.style.display==="block"){
-
-menu.style.display="none";
-
-}
-
-else{
-
-menu.style.display="block";
-
-}
-
-}
-
-
 
 
 function calculateAverage(){
 
 
-let input=document.getElementById("numbers").value;
+let input = document.getElementById("averageNumbers").value;
 
 
-let values=input.split(",").map(Number);
+let numbers = input.split(",").map(Number);
 
 
-let sum=0;
+
+let total = 0;
 
 
-for(let i=0;i<values.length;i++){
 
-sum += values[i];
+for(let i=0;i<numbers.length;i++){
+
+
+total += numbers[i];
+
 
 }
 
 
-let average=sum/values.length;
+
+let result = total / numbers.length;
 
 
 
-document.getElementById("result").innerHTML=
-"Average = " + average.toFixed(2);
+document.getElementById("averageResult").innerHTML =
+result.toFixed(2);
 
 
 }
@@ -953,6 +1017,8 @@ document.getElementById("result").innerHTML=
 
 
 
+
 </body>
+
 
 </html>
