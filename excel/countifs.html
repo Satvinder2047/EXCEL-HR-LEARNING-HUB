@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>COUNTIFS Function | Excel HR Learning Hub</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+
+.navbar{
+background:#1f4e79;
+color:white;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+
+.wrapper{
+display:flex;
+}
+
+
+.sidebar{
+width:260px;
+background:white;
+min-height:100vh;
+padding:20px;
+border-right:1px solid #ddd;
+}
+
+
+.sidebar h3{
+color:#1f4e79;
+margin-bottom:15px;
+}
+
+
+.menu-title{
+background:#1f4e79;
+color:white;
+padding:10px;
+margin-bottom:5px;
+border-radius:5px;
+cursor:pointer;
+}
+
+
+.submenu{
+display:none;
+padding-left:15px;
+}
+
+
+.submenu a{
+display:block;
+padding:8px;
+text-decoration:none;
+color:#333;
+}
+
+
+.submenu a:hover{
+background:#eaf2f8;
+}
+
+
+
+.content{
+flex:1;
+padding:30px;
+}
+
+
+
+.hero{
+
+background:linear-gradient(135deg,#1f4e79,#2f75b5);
+color:white;
+padding:35px;
+border-radius:12px;
+margin-bottom:25px;
+
+}
+
+
+.hero h1{
+font-size:36px;
+}
+
+
+
+.card{
+
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+}
+
+
+.card h2{
+color:#1f4e79;
+margin-bottom:15px;
+}
+
+
+
+code{
+
+display:block;
+background:#222;
+color:white;
+padding:15px;
+border-radius:6px;
+margin:15px 0;
+
+}
+
+
+
+table{
+
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+
+}
+
+
+th{
+
+background:#1f4e79;
+color:white;
+
+}
+
+
+td,th{
+
+border:1px solid #ddd;
+padding:12px;
+text-align:center;
+
+}
+
+
+
+input{
+
+padding:10px;
+width:200px;
+
+}
+
+
+
+button{
+
+background:#1f4e79;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+background:#2f75b5;
+
+}
+
+
+
+footer{
+
+background:#1f4e79;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<div class="navbar">
+
+<h2>Excel HR Learning Hub</h2>
+
+
+<div>
+
+<a href="index.html">Home</a>
+
+<a href="functions.html">Functions</a>
+
+<a href="about.html">About</a>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="wrapper">
+
+
+
+<div class="sidebar">
+
+
+<h3>Excel Functions</h3>
+
+
+
+<div class="menu-title" onclick="toggleMenu('basic')">
+Basic Functions +
+</div>
+
+
+<div class="submenu" id="basic">
+
+<a href="average.html">AVERAGE</a>
+
+<a href="sum.html">SUM</a>
+
+<a href="count.html">COUNT</a>
+
+<a href="countif.html">COUNTIF</a>
+
+<a href="countifs.html">COUNTIFS</a>
+
+</div>
+
+
+
+
+<div class="menu-title" onclick="toggleMenu('logical')">
+Logical Functions +
+</div>
+
+
+<div class="submenu" id="logical">
+
+<a href="if.html">IF</a>
+
+<a href="and.html">AND</a>
+
+<a href="or.html">OR</a>
+
+</div>
+
+
+
+
+<div class="menu-title" onclick="toggleMenu('lookup')">
+Lookup Functions +
+</div>
+
+
+<div class="submenu" id="lookup">
+
+<a href="vlookup.html">VLOOKUP</a>
+
+<a href="xlookup.html">XLOOKUP</a>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="content">
+
+
+<div class="hero">
+
+
+<h1>COUNTIFS Function</h1>
+
+
+<p>
+Count data using multiple conditions with Excel COUNTIFS function and HR examples.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>Function Overview</h2>
+
+
+<p>
+
+COUNTIFS is an advanced counting function used when we need to apply
+multiple conditions while counting data.
+
+HR teams use COUNTIFS for manpower reports,
+attendance analysis, recruitment tracking and compliance monitoring.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<h2>Syntax</h2>
+
+
+<code>
+=COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2], ...)
+</code>
+
+
+<p>
+Example:
+</p>
+
+
+<code>
+=COUNTIFS(B:B,"Production",C:C,"Active")
+</code>
+
+
+</div>
+<div class="card">
+
+
+<h2>Arguments Explanation</h2>
+
+
+<table>
+
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+
+
+<tr>
+<td>criteria_range1</td>
+<td>The first range where Excel checks the condition</td>
+</tr>
+
+
+<tr>
+<td>criteria1</td>
+<td>The first condition to apply</td>
+</tr>
+
+
+<tr>
+<td>criteria_range2</td>
+<td>Additional range for second condition</td>
+</tr>
+
+
+<tr>
+<td>criteria2</td>
+<td>Additional condition (optional)</td>
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>Basic Example</h2>
+
+
+<p>
+Count active employees working in Production department.
+</p>
+
+
+
+<table>
+
+<tr>
+<th>Employee</th>
+<th>Department</th>
+<th>Status</th>
+</tr>
+
+
+<tr>
+<td>Rahul</td>
+<td>Production</td>
+<td>Active</td>
+</tr>
+
+
+<tr>
+<td>Amit</td>
+<td>Quality</td>
+<td>Active</td>
+</tr>
+
+
+<tr>
+<td>Neha</td>
+<td>Production</td>
+<td>Inactive</td>
+</tr>
+
+
+</table>
+
+
+
+<code>
+=COUNTIFS(B2:B4,"Production",C2:C4,"Active")
+</code>
+
+
+<p>
+Result: Counts only active Production employees.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>HR Practical Example 1: Active Manpower Report</h2>
+
+
+<p>
+HR can use COUNTIFS to prepare department-wise active manpower reports.
+</p>
+
+
+
+<table>
+
+<tr>
+<th>Department</th>
+<th>Employment Status</th>
+<th>Count</th>
+</tr>
+
+
+<tr>
+<td>Production</td>
+<td>Active</td>
+<td>120</td>
+</tr>
+
+
+<tr>
+<td>Quality</td>
+<td>Active</td>
+<td>35</td>
+</tr>
+
+
+<tr>
+<td>Engineering</td>
+<td>Active</td>
+<td>20</td>
+</tr>
+
+
+</table>
+
+
+
+<code>
+=COUNTIFS(A:A,"Production",B:B,"Active")
+</code>
+
+
+<p>
+Counts active Production employees.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>HR Practical Example 2: Attendance Analysis</h2>
+
+
+<p>
+Count employees having attendance below 90% and status Active.
+</p>
+
+
+<table>
+
+<tr>
+<th>Employee</th>
+<th>Attendance %</th>
+<th>Status</th>
+</tr>
+
+
+<tr>
+<td>Rahul</td>
+<td>88</td>
+<td>Active</td>
+</tr>
+
+
+<tr>
+<td>Amit</td>
+<td>95</td>
+<td>Active</td>
+</tr>
+
+
+<tr>
+<td>Neha</td>
+<td>85</td>
+<td>Active</td>
+</tr>
+
+
+</table>
+
+
+
+<code>
+=COUNTIFS(B:B,"<90",C:C,"Active")
+</code>
+
+
+<p>
+Counts active employees with attendance below 90%.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>HR Practical Example 3: Recruitment Tracker</h2>
+
+
+<p>
+Count candidates based on department and interview status.
+</p>
+
+
+
+<code>
+=COUNTIFS(B:B,"Production",C:C,"Selected")
+</code>
+
+
+<p>
+Counts selected candidates for Production vacancies.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>COUNTIFS with Dates</h2>
+
+
+<p>
+Count employees joined in a specific year.
+</p>
+
+
+<code>
+=COUNTIFS(A:A,">=01-01-2026",A:A,"<=31-12-2026")
+</code>
+
+
+<p>
+Useful for joining reports and recruitment MIS.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>HR Applications</h2>
+
+
+<ul>
+
+<li>Active Employee Headcount</li>
+
+<li>Department Wise Manpower Reports</li>
+
+<li>Attendance Monitoring</li>
+
+<li>Recruitment Status Tracking</li>
+
+<li>Training Completion Reports</li>
+
+<li>Compliance Data Analysis</li>
+
+</ul>
+
+
+</div>
+<div class="card">
+
+
+<h2>Interactive COUNTIFS Calculator</h2>
+
+
+<p>
+Enter department and status data separated by commas.
+The calculator will count matching records.
+</p>
+
+
+<input type="text" id="departments" placeholder="Production,Quality,Production">
+
+
+<input type="text" id="statuses" placeholder="Active,Active,Inactive">
+
+
+<br><br>
+
+
+<input type="text" id="deptCondition" placeholder="Department">
+
+
+<input type="text" id="statusCondition" placeholder="Status">
+
+
+<br><br>
+
+
+<button onclick="calculateCountIFS()">
+Calculate Count
+</button>
+
+
+
+<h3 id="countifsResult" style="margin-top:15px;"></h3>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>Related Functions</h2>
+
+
+<table>
+
+
+<tr>
+<th>Function</th>
+<th>Purpose</th>
+</tr>
+
+
+
+<tr>
+<td>COUNT</td>
+<td>Counts numeric values</td>
+</tr>
+
+
+
+<tr>
+<td>COUNTA</td>
+<td>Counts non-empty cells</td>
+</tr>
+
+
+
+<tr>
+<td>COUNTIF</td>
+<td>Counts using one condition</td>
+</tr>
+
+
+
+<tr>
+<td>COUNTIFS</td>
+<td>Counts using multiple conditions</td>
+</tr>
+
+
+
+<tr>
+<td>SUMIFS</td>
+<td>Adds values using multiple conditions</td>
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>Practice Questions</h2>
+
+
+<ol>
+
+
+<li>
+Count active Production employees.
+</li>
+
+
+<li>
+Find employees with attendance below 90%.
+</li>
+
+
+<li>
+Count selected candidates department-wise.
+</li>
+
+
+<li>
+Find employees joined after January 2026.
+</li>
+
+
+<li>
+Prepare department and status wise manpower report.
+</li>
+
+
+</ol>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div style="display:flex;justify-content:space-between;margin-top:20px;">
+
+
+
+<a href="countif.html">
+
+<button>
+← Previous: COUNTIF
+</button>
+
+</a>
+
+
+
+
+<a href="sumif.html">
+
+<button>
+Next: SUMIF →
+</button>
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<footer>
+
+Excel HR Learning Hub | Learn Excel with HR Practical Examples
+
+</footer>
+
+
+
+
+
+
+
+
+<script>
+
+
+function toggleMenu(id){
+
+
+let menu=document.getElementById(id);
+
+
+if(menu.style.display==="block"){
+
+menu.style.display="none";
+
+}
+
+else{
+
+menu.style.display="block";
+
+}
+
+
+}
+
+
+
+
+
+
+
+function calculateCountIFS(){
+
+
+let departments=document.getElementById("departments").value.split(",");
+
+
+let statuses=document.getElementById("statuses").value.split(",");
+
+
+
+let deptCondition=document.getElementById("deptCondition").value.trim();
+
+
+let statusCondition=document.getElementById("statusCondition").value.trim();
+
+
+
+let count=0;
+
+
+
+for(let i=0;i<departments.length;i++){
+
+
+if(
+departments[i].trim()==deptCondition &&
+statuses[i].trim()==statusCondition
+)
+
+{
+
+count++;
+
+}
+
+
+}
+
+
+
+
+document.getElementById("countifsResult").innerHTML=
+"Count = " + count;
+
+
+
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
