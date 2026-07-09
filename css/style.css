@@ -510,3 +510,16 @@ z-index:9999;
 transition:.1s;
 
 }
+// ===========================
+// SUM Function Calculator
+// ===========================
+
+function calculateSum() {
+
+    let n1 = Number(document.getElementById("num1").value);
+
+    let n2 = Number(document.getElementById("num2").value);
+
+    document.getElementById("sumResult").innerHTML = n1 + n2;
+
+}
