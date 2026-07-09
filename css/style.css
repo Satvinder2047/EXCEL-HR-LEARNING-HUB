@@ -397,3 +397,62 @@ font-size:20px;
 }
 
 }
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar{
+
+    background:#ffffff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:90px;
+
+}
+
+.sidebar h4{
+
+    color:#198754;
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding-left:0;
+
+}
+
+.sidebar li{
+
+    padding:8px 0;
+
+}
+
+.sidebar a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+
+}
+
+.sidebar a:hover{
+
+    color:#198754;
+
+}
