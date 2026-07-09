@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel & HR Learning Hub</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .navbar {
+            background: #1565C0;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .hero {
+            background: linear-gradient(135deg,#1565C0,#217346);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .btn-custom {
+            background: white;
+            color: #1565C0;
+            font-weight: bold;
+            border-radius: 30px;
+            padding: 10px 25px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 60px 0 30px;
+            font-weight: bold;
+            color: #1565C0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: .3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card i {
+            font-size: 45px;
+            color: #217346;
+        }
+
+        footer {
+            background: #1565C0;
+            color: white;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        .tutorial-list li{
+            padding:8px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+
+<a class="navbar-brand" href="#">Excel & HR Hub</a>
+
+<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+
+<li class="nav-item"><a class="nav-link" href="excel.html">Excel</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#">Dashboards</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h1>Excel & HR Learning Hub</h1>
+
+<p>
+
+Learn Microsoft Excel, HR Operations, Automation, Dashboards,
+Templates and Business Productivity through practical tutorials,
+real-world examples and downloadable resources.
+
+</p>
+
+<a href="excel.html" class="btn btn-custom mt-3">Start Learning</a>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img src="images/hero.png" class="img-fluid" width="450">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Categories -->
+
+<div class="container">
+
+<h2 class="section-title">Explore Categories</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<i class="bi bi-file-earmark-excel"></i>
+
+<h4 class="mt-3">Excel Functions</h4>
+
+<p>
+
+Master formulas from Beginner to Advanced with examples.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<i class="bi bi-people-fill"></i>
+
+<h4 class="mt-3">HR Resources</h4>
+
+<p>
+
+Recruitment, Payroll, Attendance, SOPs and HR Formats.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<i class="bi bi-bar-chart-fill"></i>
+
+<h4 class="mt-3">Dashboards</h4>
+
+<p>
+
+Interactive HR, Payroll and Sales Dashboards.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<i class="bi bi-cpu-fill"></i>
+
+<h4 class="mt-3">Automation</h4>
+
+<p>
+
+Power Query, VBA and Office Automation.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<i class="bi bi-download"></i>
+
+<h4 class="mt-3">Templates</h4>
+
+<p>
+
+Download Free Excel Templates and Practice Files.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card p-4 text-center">
+
+<i class="bi bi-play-circle-fill"></i>
+
+<h4 class="mt-3">Tutorials</h4>
+
+<p>
+
+Step-by-step written guides and video tutorials.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Popular -->
+
+<div class="container">
+
+<h2 class="section-title">Popular Tutorials</h2>
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<ul class="tutorial-list">
+
+<li>✔ IF Function</li>
+<li>✔ VLOOKUP</li>
+<li>✔ XLOOKUP</li>
+<li>✔ FILTER</li>
+<li>✔ SUMIFS</li>
+<li>✔ INDEX + MATCH</li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-6">
+
+<ul class="tutorial-list">
+
+<li>✔ LET Function</li>
+<li>✔ LAMBDA</li>
+<li>✔ Power Query</li>
+<li>✔ Pivot Table</li>
+<li>✔ Excel Dashboard</li>
+<li>✔ VBA Basics</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- About -->
+
+<div class="container">
+
+<h2 class="section-title">About Excel & HR Learning Hub</h2>
+
+<p class="text-center">
+
+Excel & HR Learning Hub is a free educational platform designed to help
+students, professionals, and office users master Microsoft Excel,
+HR operations, automation, dashboards, and workplace productivity through
+easy-to-understand tutorials, practical examples, and downloadable resources.
+
+</p>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="text-center">
+
+<h5>Excel & HR Learning Hub</h5>
+
+<p>
+
+Learn • Practice • Automate • Grow
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
