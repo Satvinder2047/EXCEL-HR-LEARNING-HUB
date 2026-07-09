@@ -456,3 +456,34 @@ font-size:20px;
     color:#198754;
 
 }
+/* ===========================
+   Breadcrumb
+=========================== */
+
+.breadcrumb{
+
+    background:#ffffff;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.breadcrumb a{
+
+    text-decoration:none;
+
+    color:#198754;
+
+    font-weight:600;
+
+}
+
+.breadcrumb-item.active{
+
+    color:#666;
+
+}
