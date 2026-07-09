@@ -182,3 +182,4 @@ function checkResult() {
     }
 
 }
+<script src="../js/script.js"></script>
