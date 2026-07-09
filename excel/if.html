@@ -8,13 +8,15 @@
 
 <title>IF Function | Excel & HR Learning Hub</title>
 
-<link rel="icon" href="../images/excel-icon.png">
+<meta name="description" content="Learn the IF Function in Excel with syntax, examples and HR use cases.">
 
-<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../images/excel-icon.png">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
 
 </head>
 
@@ -22,7 +24,7 @@
 
 <div id="progressBar"></div>
 
-<!-- Navbar -->
+<!-- ===================== NAVBAR ===================== -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow sticky-top">
 
@@ -39,7 +41,6 @@ Excel & HR Learning Hub
 
 </a>
 
-
 <button class="navbar-toggler"
 type="button"
 data-bs-toggle="collapse"
@@ -49,53 +50,37 @@ data-bs-target="#navbarMenu">
 
 </button>
 
-
 <div class="collapse navbar-collapse" id="navbarMenu">
 
 <ul class="navbar-nav ms-auto">
 
-
 <li class="nav-item">
-<a class="nav-link" href="../index.html">
-Home
-</a>
+<a class="nav-link" href="../index.html">Home</a>
 </li>
 
-
 <li class="nav-item">
-<a class="nav-link" href="../excel.html">
-Excel
-</a>
+<a class="nav-link active" href="../excel.html">Excel</a>
 </li>
 
-
 <li class="nav-item">
-<a class="nav-link" href="../hr.html">
-HR
-</a>
+<a class="nav-link" href="../hr.html">HR</a>
 </li>
 
-
 <li class="nav-item">
-<a class="nav-link" href="../templates.html">
-Templates
-</a>
+<a class="nav-link" href="../templates.html">Templates</a>
 </li>
 
-
 <li class="nav-item">
-<a class="nav-link" href="../tutorials.html">
-Tutorials
-</a>
+<a class="nav-link" href="../tutorials.html">Tutorials</a>
 </li>
 
-
 <li class="nav-item">
-<a class="nav-link" href="../about.html">
-About
-</a>
+<a class="nav-link" href="../about.html">About</a>
 </li>
 
+<li class="nav-item">
+<a class="nav-link" href="../contact.html">Contact</a>
+</li>
 
 </ul>
 
@@ -104,40 +89,58 @@ About
 </div>
 
 </nav>
-<!-- ===========================
-     Breadcrumb
-=========================== -->
+
+<!-- ===================== BREADCRUMB ===================== -->
 
 <nav class="container mt-4" aria-label="breadcrumb">
 
-    <ol class="breadcrumb">
+<ol class="breadcrumb">
 
-        <li class="breadcrumb-item">
-            <a href="../index.html">Home</a>
-        </li>
+<li class="breadcrumb-item">
 
-        <li class="breadcrumb-item">
-            <a href="../excel.html">Excel</a>
-        </li>
+<a href="../index.html">Home</a>
 
-        <li class="breadcrumb-item">
-            Beginner
-        </li>
+</li>
 
-        <li class="breadcrumb-item active" aria-current="page">
-            IF Function
-        </li>
+<li class="breadcrumb-item">
 
-    </ol>
+<a href="../excel.html">Excel</a>
+
+</li>
+
+<li class="breadcrumb-item">
+
+Beginner
+
+</li>
+
+<li class="breadcrumb-item active">
+
+IF Function
+
+</li>
+
+</ol>
 
 </nav>
-<!-- Hero -->
+
+<!-- ===================== HERO ===================== -->
 
 <section class="hero">
 
 <div class="container text-center">
 
-<h1>IF Function in Excel</h1>
+<span class="badge bg-warning text-dark mb-3">
+
+🟢 Beginner
+
+</span>
+
+<h1>
+
+IF Function in Excel
+
+</h1>
 
 <p>
 
@@ -149,69 +152,187 @@ Perform logical tests and return different values based on conditions.
 
 </section>
 
-<!-- Content -->
+<!-- ===================== PAGE ===================== -->
 
 <div class="container py-5">
 
-<div class="row">
+<div class="row g-4">
+
+<!-- Sidebar -->
 
 <div class="col-lg-3">
-
 <div class="sidebar">
 
-<h4>Excel Functions</h4>
+<h4 class="mb-4">
 
-<b>🟢 Beginner</b>
+📚 Excel Functions
 
-<ul>
+</h4>
 
-<li><a href="if.html">IF</a></li>
+<!-- Beginner -->
 
-<li><a href="sum.html">SUM</a></li>
+<h6 class="text-success fw-bold">
 
-<li><a href="average.html">AVERAGE</a></li>
+🟢 Beginner
 
-<li><a href="countif.html">COUNTIF</a></li>
+</h6>
 
-</ul>
+<div class="list-group mb-4">
 
-<b>🔵 Intermediate</b>
+<a href="if.html" class="list-group-item list-group-item-action active">
 
-<ul>
+IF
 
-<li><a href="vlookup.html">VLOOKUP</a></li>
+</a>
 
-<li><a href="xlookup.html">XLOOKUP</a></li>
+<a href="sum.html" class="list-group-item list-group-item-action">
 
-<li><a href="filter.html">FILTER</a></li>
+SUM
 
-<li><a href="sumifs.html">SUMIFS</a></li>
+</a>
 
-</ul>
+<a href="average.html" class="list-group-item list-group-item-action">
 
-<b>🟣 Advanced</b>
+AVERAGE
 
-<ul>
+</a>
 
-<li><a href="index-match.html">INDEX + MATCH</a></li>
+<a href="count.html" class="list-group-item list-group-item-action">
 
-<li><a href="let.html">LET</a></li>
+COUNT
 
-<li><a href="lambda.html">LAMBDA</a></li>
+</a>
 
-<li><a href="power-query.html">Power Query</a></li>
+<a href="counta.html" class="list-group-item list-group-item-action">
 
-</ul>
+COUNTA
+
+</a>
+
+<a href="countblank.html" class="list-group-item list-group-item-action">
+
+COUNTBLANK
+
+</a>
+
+<a href="countif.html" class="list-group-item list-group-item-action">
+
+COUNTIF
+
+</a>
+
+<a href="countifs.html" class="list-group-item list-group-item-action">
+
+COUNTIFS
+
+</a>
+
+<a href="sumif.html" class="list-group-item list-group-item-action">
+
+SUMIF
+
+</a>
+
+<a href="sumifs.html" class="list-group-item list-group-item-action">
+
+SUMIFS
+
+</a>
+
+</div>
+
+<!-- Intermediate -->
+
+<h6 class="text-primary fw-bold">
+
+🔵 Intermediate
+
+</h6>
+
+<div class="list-group mb-4">
+
+<a href="vlookup.html" class="list-group-item list-group-item-action">
+
+VLOOKUP
+
+</a>
+
+<a href="xlookup.html" class="list-group-item list-group-item-action">
+
+XLOOKUP
+
+</a>
+
+<a href="filter.html" class="list-group-item list-group-item-action">
+
+FILTER
+
+</a>
+
+<a href="sort.html" class="list-group-item list-group-item-action">
+
+SORT
+
+</a>
+
+<a href="unique.html" class="list-group-item list-group-item-action">
+
+UNIQUE
+
+</a>
+
+</div>
+
+<!-- Advanced -->
+
+<h6 class="fw-bold" style="color:#6f42c1;">
+
+🟣 Advanced
+
+</h6>
+
+<div class="list-group">
+
+<a href="index-match.html" class="list-group-item list-group-item-action">
+
+INDEX + MATCH
+
+</a>
+
+<a href="let.html" class="list-group-item list-group-item-action">
+
+LET
+
+</a>
+
+<a href="lambda.html" class="list-group-item list-group-item-action">
+
+LAMBDA
+
+</a>
+
+<a href="power-query.html" class="list-group-item list-group-item-action">
+
+Power Query
+
+</a>
 
 </div>
 
 </div>
 
-<div class="col-lg-9">
+</div>
+
+<!-- Main Content -->
+
+<div class="col-lg-6">
+<!-- ===================== MAIN CONTENT ===================== -->
 
 <h2>Syntax</h2>
 
 <div class="alert alert-light border">
+
+<div class="d-flex justify-content-between align-items-center">
 
 <code>
 
@@ -219,23 +340,35 @@ Perform logical tests and return different values based on conditions.
 
 </code>
 
+<button
+class="btn btn-outline-success btn-sm"
+onclick="copyFormula(this)">
+
+<i class="bi bi-clipboard"></i>
+
+Copy
+
+</button>
+
 </div>
 
-<h2>Description</h2>
+</div>
+
+<h2 class="mt-4">Description</h2>
 
 <p>
 
-The IF function checks whether a condition is TRUE or FALSE.
-
-If the condition is TRUE, Excel returns one value.
-
-If FALSE, it returns another value.
+The <strong>IF</strong> function checks whether a condition is TRUE or FALSE.
+If the condition is TRUE, Excel returns one value. If the condition is FALSE, it returns another value.
+It is one of the most commonly used logical functions in Excel.
 
 </p>
 
-<h2>Arguments</h2>
+<h2 class="mt-4">Arguments</h2>
 
 <table class="table table-bordered">
+
+<thead>
 
 <tr>
 
@@ -245,33 +378,39 @@ If FALSE, it returns another value.
 
 </tr>
 
+</thead>
+
+<tbody>
+
 <tr>
 
-<td>logical_test</td>
+<td><strong>logical_test</strong></td>
 
-<td>The condition to test.</td>
+<td>The condition you want to test.</td>
 
 </tr>
 
 <tr>
 
-<td>value_if_true</td>
+<td><strong>value_if_true</strong></td>
 
-<td>Returned when condition is TRUE.</td>
+<td>Returned when the condition is TRUE.</td>
 
 </tr>
 
 <tr>
 
-<td>value_if_false</td>
+<td><strong>value_if_false</strong></td>
 
-<td>Returned when condition is FALSE.</td>
+<td>Returned when the condition is FALSE.</td>
 
 </tr>
+
+</tbody>
 
 </table>
 
-<h2>Example 1</h2>
+<h2 class="mt-5">Example 1</h2>
 
 <div class="alert alert-success">
 
@@ -283,17 +422,43 @@ If FALSE, it returns another value.
 
 </div>
 
-Result
+<table class="table table-bordered">
 
-```
-Marks  Result
+<thead>
 
-45     Pass
+<tr>
 
-20     Fail
-```
+<th>Marks</th>
 
-<h2>Example 2</h2>
+<th>Result</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>45</td>
+
+<td>Pass</td>
+
+</tr>
+
+<tr>
+
+<td>20</td>
+
+<td>Fail</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<h2 class="mt-5">Example 2</h2>
 
 <div class="alert alert-success">
 
@@ -305,85 +470,109 @@ Marks  Result
 
 </div>
 
-<h2>Common Uses</h2>
+<p>
+
+If cell <strong>B2</strong> contains <strong>"Yes"</strong>, Excel returns <strong>Approved</strong>; otherwise it returns <strong>Pending</strong>.
+
+</p>
+
+<h2 class="mt-5">Common HR Uses</h2>
 
 <ul>
 
-<li>Attendance</li>
+<li>Attendance Status</li>
 
 <li>Salary Calculation</li>
 
-<li>Bonus Calculation</li>
+<li>Bonus Eligibility</li>
 
 <li>Shift Allocation</li>
 
-<li>Payroll</li>
+<li>Payroll Validation</li>
 
-<li>HR Reports</li>
+<li>Leave Approval</li>
+
+<li>Performance Rating</li>
 
 </ul>
 
-<h2>Nested IF</h2>
+<h2 class="mt-5">Nested IF</h2>
 
 <div class="alert alert-warning">
 
 <code>
 
-=IF(A2>=90,"A",
-
-IF(A2>=75,"B",
-
-IF(A2>=50,"C","Fail")))
+=IF(A2>=90,"A",IF(A2>=75,"B",IF(A2>=50,"C","Fail")))
 
 </code>
 
 </div>
-<!-- ===========================
-     Try It Yourself
-=========================== -->
 
-<h2 class="mt-5">🧪 Try It Yourself</h2>
+<p>
+
+Nested IF allows you to test multiple conditions by placing one IF function inside another.
+
+</p>
+<!-- ===================== TRY IT YOURSELF ===================== -->
+
+<h2 class="mt-5">
+
+🧪 Try It Yourself
+
+</h2>
 
 <div class="card shadow p-4">
 
-    <label class="form-label">
-        Enter Student Marks
-    </label>
+<label class="form-label">
 
-    <input
-        type="number"
-        id="marks"
-        class="form-control"
-        placeholder="Example: 78">
+Enter Student Marks
 
-    <button
-        class="btn btn-success mt-3"
-        onclick="checkResult()">
+</label>
 
-        Check Result
+<input
+type="number"
+id="marks"
+class="form-control"
+placeholder="Example: 78">
 
-    </button>
+<button
+class="btn btn-success mt-3"
+onclick="checkResult()">
 
-    <h4 class="mt-4">
+Check Result
 
-        Result:
-        <span id="resultText" class="text-success"></span>
+</button>
 
-    </h4>
+<h4 class="mt-4">
+
+Result :
+
+<span id="resultText" class="text-success fw-bold"></span>
+
+</h4>
 
 </div>
-<h2>Download Practice File</h2>
 
-<a href="#" class="btn btn-success">
+<!-- ===================== DOWNLOAD ===================== -->
+
+<h2 class="mt-5">
+
+📥 Download Practice File
+
+</h2>
+
+<a href="../downloads/IF-Practice.xlsx"
+class="btn btn-success">
+
+<i class="bi bi-download"></i>
 
 Download Excel File
 
 </a>
-     <!-- ===========================
-     Related Functions
-=========================== -->
 
-<h2 class="mt-5 mb-4">
+<!-- ===================== RELATED FUNCTIONS ===================== -->
+
+<h2 class="mt-5">
 
 Related Functions
 
@@ -393,21 +582,22 @@ Related Functions
 
 <div class="col-md-3">
 
-<div class="formula-card">
+<div class="card h-100 shadow-sm">
 
-<h4>IFS</h4>
+<div class="card-body text-center">
 
-<p>
+<h5>IFS</h5>
 
-Multiple Conditions
+<p>Multiple Conditions</p>
 
-</p>
-
-<a href="#" class="btn btn-success btn-sm">
+<a href="ifs.html"
+class="btn btn-success btn-sm">
 
 Learn
 
 </a>
+
+</div>
 
 </div>
 
@@ -415,21 +605,22 @@ Learn
 
 <div class="col-md-3">
 
-<div class="formula-card">
+<div class="card h-100 shadow-sm">
 
-<h4>AND</h4>
+<div class="card-body text-center">
 
-<p>
+<h5>AND</h5>
 
-Multiple Logical Tests
+<p>Multiple Tests</p>
 
-</p>
-
-<a href="#" class="btn btn-success btn-sm">
+<a href="and.html"
+class="btn btn-success btn-sm">
 
 Learn
 
 </a>
+
+</div>
 
 </div>
 
@@ -437,21 +628,22 @@ Learn
 
 <div class="col-md-3">
 
-<div class="formula-card">
+<div class="card h-100 shadow-sm">
 
-<h4>OR</h4>
+<div class="card-body text-center">
 
-<p>
+<h5>OR</h5>
 
-Either Condition
+<p>Either Condition</p>
 
-</p>
-
-<a href="#" class="btn btn-success btn-sm">
+<a href="or.html"
+class="btn btn-success btn-sm">
 
 Learn
 
 </a>
+
+</div>
 
 </div>
 
@@ -459,17 +651,16 @@ Learn
 
 <div class="col-md-3">
 
-<div class="formula-card">
+<div class="card h-100 shadow-sm">
 
-<h4>NOT</h4>
+<div class="card-body text-center">
 
-<p>
+<h5>NOT</h5>
 
-Reverse Logic
+<p>Reverse Logic</p>
 
-</p>
-
-<a href="#" class="btn btn-success btn-sm">
+<a href="not.html"
+class="btn btn-success btn-sm">
 
 Learn
 
@@ -480,74 +671,96 @@ Learn
 </div>
 
 </div>
+
+</div>
+
 <hr class="my-5">
 
 <div class="d-flex justify-content-between">
 
-<a href="../excel.html" class="btn btn-outline-secondary">
+<a href="../excel.html"
+class="btn btn-outline-secondary">
 
-← Back to Excel Library
+← Excel Library
 
 </a>
 
-<a href="sum.html" class="btn btn-success">
+<a href="sum.html"
+class="btn btn-success">
 
 Next Lesson →
 
 </a>
 
 </div>
+
 </div>
 
-<div class="col-lg-4">
+<!-- ===================== QUICK FACTS ===================== -->
 
-<div class="card shadow">
+<div class="col-lg-3">
+
+<div class="card shadow sticky-top" style="top:90px;">
 
 <div class="card-body">
 
-<h4>Quick Facts</h4>
+<h4 class="text-success">
+
+Quick Facts
+
+</h4>
 
 <hr>
 
-<p>
+<table class="table table-sm">
 
-<b>Category</b><br>
+<tr>
 
-Logical Functions
+<th>Category</th>
 
-</p>
+<td>Logical</td>
 
-<p>
+</tr>
 
-<b>Difficulty</b><br>
+<tr>
 
-⭐⭐ Beginner
+<th>Level</th>
 
-</p>
+<td>🟢 Beginner</td>
 
-<p>
+</tr>
 
-<b>Available Since</b><br>
+<tr>
 
-Excel 2007+
+<th>Excel</th>
 
-</p>
+<td>2007+</td>
 
-<p>
+</tr>
 
-<b>Related Functions</b>
+<tr>
 
-</p>
+<th>Returns</th>
 
-<ul>
+<td>Value</td>
 
-<li>IFS</li>
+</tr>
 
-<li>AND</li>
+</table>
 
-<li>OR</li>
+<hr>
 
-<li>NOT</li>
+<h5>Related</h5>
+
+<ul class="list-unstyled">
+
+<li>✔ IFS</li>
+
+<li>✔ AND</li>
+
+<li>✔ OR</li>
+
+<li>✔ NOT</li>
 
 </ul>
 
@@ -560,15 +773,63 @@ Excel 2007+
 </div>
 
 </div>
+<!-- ===================== FOOTER ===================== -->
 
 <footer class="bg-dark text-white pt-5 pb-3">
 
-<div class="container text-center">
+<div class="container">
 
-<p class="mb-0">
+<div class="row">
 
-© <span id="year"></span>
-Excel & HR Learning Hub. All Rights Reserved.
+<div class="col-md-4">
+
+<h4>Excel & HR Learning Hub</h4>
+
+<p>
+
+Helping professionals master Excel, HR, Automation, Dashboards and AI.
+
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Quick Links</h4>
+
+<ul class="list-unstyled">
+
+<li><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+
+<li><a href="../excel.html" class="text-white text-decoration-none">Excel</a></li>
+
+<li><a href="../about.html" class="text-white text-decoration-none">About</a></li>
+
+<li><a href="../contact.html" class="text-white text-decoration-none">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Follow Us</h4>
+
+<p><i class="bi bi-linkedin"></i> LinkedIn</p>
+
+<p><i class="bi bi-github"></i> GitHub</p>
+
+<p><i class="bi bi-youtube"></i> YouTube</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="text-center mb-0">
+
+© <span id="year"></span> Excel & HR Learning Hub. All Rights Reserved.
 
 </p>
 
@@ -576,9 +837,48 @@ Excel & HR Learning Hub. All Rights Reserved.
 
 </footer>
 
+<!-- Bootstrap JS -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- Custom JS -->
+
 <script src="../js/script.js"></script>
+
+<script>
+
+/* ===============================
+   IF Function Demo
+================================ */
+
+function checkResult(){
+
+let marks = Number(document.getElementById("marks").value);
+
+let result = "";
+
+if(isNaN(marks) || document.getElementById("marks").value===""){
+
+result = "Please enter marks.";
+
+}
+else if(marks>=35){
+
+result = "✅ Pass";
+
+}
+else{
+
+result = "❌ Fail";
+
+}
+
+document.getElementById("resultText").innerHTML=result;
+
+}
+
+</script>
+
 </body>
 
 </html>
